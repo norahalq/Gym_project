@@ -1,0 +1,163 @@
+/* Rest */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Main Style */
+html,body{
+    font-family: 'Almarai', sans-serif;
+    line-height:1.6;
+}
+a{
+    /* ازالة الخط تحت الرابط */
+    text-decoration: none;
+}
+
+/* Utility Classes*/
+.container{
+    max-width: 80%;
+    margin: auto;
+}
+.bg_dark{
+    background-color:#401d40;
+    color:#fff;
+}
+.bg-light{
+    background-color:#d35a942f;
+
+   }
+.box-shadow{
+    box-shadow: 0 0 2px #252a34;
+}
+.text-primary{
+    color:#d35a95
+}
+.lead{
+    font-size: 1.6rem;
+}
+.m-heading{
+    font-size: 2rem;
+}
+/* End  Utility Classes */
+
+/* Section : Navbar */
+#navbar{
+    /* لاني ابغى اوزع العناصر  اللوقو في اليسار
+     و nav يمين */
+    display:flex;
+    /*اجعل لي  المسافة بين العنصرين  */
+    /* justify-content:space-between ; */
+    /* يوسط اللوقو مع القائمة */
+    align-items: center;
+    padding: 16px 0px 0px 16px;
+    /* القائمة ثابته في كل الصفحات */
+    position: sticky;
+    top:0;
+    /* تكون القائمة فوق العناصر */
+    z-index: 1;
+}
+#navbar .logo {
+    width:130px;
+    height:20%; 
+}
+#navbar .logo img{
+    width:50%;
+    /* height: 100%; */
+    /* rem تساوي 16 بكسل */
+
+}
+
+#navbar  ul{
+    /* ازالة التعداد الرقمي للقائمة  */
+    list-style:none;
+    display:inline-flex;
+}
+#navbar ul li a{
+    color: white;
+    padding: 1rem ;
+}
+#navbar ul li a:hover{
+   background: #d35a95; ;
+   border-radius:5px ;
+}
+
+
+.text_center{
+    text-align: center;
+}
+.l-heading{
+    font-size: 30px;
+    /* text-transform: uppercase; */
+}
+ 
+.py-1{
+    padding: 1.5rem 0;
+}
+
+.btn{
+    background-color: #d35a95;
+    color: #fff;
+
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: #401d40;
+}
+/* section :showcase */
+#showcase{
+    background: #000 url("img/header1.png") no-repeat center/cover;
+    height: 100vh;
+    color:#fff;
+}
+#showcase .showcase-content{
+    /*  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+    /* overlay */
+    background-color: rgba(0, 0, 0, 0.219);
+}
+/* End section :showcase */
+
+/* Start About  section */
+#about .about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+
+}
+#about .about-content div ,#about .about-content img{
+    /* بحيث كل واحد من العنصرين يأخذ 50% من المسافة  */
+    flex:1;
+}
+#about .about-content img{
+    /* بحيث كل واحد من العنصرين يأخذ 50% من المسافة  */
+    width: 50%;
+    margin-left: 16px;
+    border: 5px solid #fff;
+}
+/* End About  sectio */
+
+
+/* <!--Start CTA  section --> */
+#cta{
+    background: url("/img/about_photo.png") no-repeat center bottom top/cover ;
+    /* color:#fff; */
+    padding-bottom: 16px;
+}
+#cta .cta-content{
+    min-height:  350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* overlay */
+    /* background-color: rgba(0,0,0,0.6); */
+}
+/* <!--End cta  section --> */
